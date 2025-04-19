@@ -1,0 +1,25 @@
+{
+    "type": "machine_model",
+    "name": "Monoprice Select Mini V2",
+    "inherits": "fdm_marlin_common",
+    "nozzle_diameter": "0.4",
+    "bed_model": "",
+    "bed_texture": "",
+    "family": "Monoprice",
+    "machine_tech": "FFF",
+    "model_id": "SelectMiniV2",
+    "default_materials": "Monoprice Generic PLA;Monoprice Generic ABS;Monoprice Generic PETG",
+    "machine_settings": {
+        "machine_width": "120",
+        "machine_depth": "120",
+        "machine_height": "120",
+        "machine_start_gcode": "G28 ; Home all axes\nG1 Z5 F5000 ; Lift nozzle\nG1 X5 Y5 F3000 ; Move to front\nM190 S[first_layer_bed_temperature] ; Wait for bed temp\nM109 S[first_layer_temperature] ; Wait for nozzle temp\nG92 E0 ; Reset extruder\nG1 Z0.2 F1000 ; Lower nozzle\nG1 X60 E10 F500 ; Prime nozzle\nG1 X100 E10 F500 ; Wipe\nG92 E0",
+        "machine_end_gcode": "G0 X0 Y120 ; Move to front\nM190 S0 ; Turn off bed (no wait)\nG92 E10 ; Set extruder to 10\nG1 E7 F200 ; Retract 3mm\nM104 S0 ; Turn off nozzle (no wait)\nG4 S300 ; Delay 5min\nM107 ; Fan off\nM84 ; Disable motors"
+    },
+    "overrides": {
+        "retraction_amount": { "default_value": 2.5 },
+        "retraction_speed": { "default_value": 40 },
+        "retraction_combing": { "value": "'noskin'" },
+        "adhesion_type": { "default_value": "brim" }
+    }
+}

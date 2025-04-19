@@ -1,0 +1,12 @@
+{
+    "type": "filament",
+    "name": "fdm_filament_common",
+    "filament_type": "generic",
+    "filament_max_volumetric_speed": "10",
+    "filament_diameter": "1.75",
+    "nozzle_temperature_initial_layer": "200",
+    "nozzle_temperature": "190",
+    "bed_temperature_initial_layer": "50",
+    "bed_temperature": "40"
+}
+

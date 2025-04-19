@@ -1,0 +1,63 @@
+{
+    "name": "Monoprice",
+    "version": "1.0.0",
+    "force_update": "0",
+    "description": "Monoprice Select Mini V2 configurations for OrcaSlicer",
+    "machine_model_list": [
+        {
+            "name": "Monoprice Select Mini V2",
+            "sub_path": "machine/monoprice_select_mini_v2.json"
+        }
+    ],
+    "process_list": [
+        {
+            "name": "fdm_process_common",
+            "sub_path": "process/fdm_process_common.json"
+        },
+        {
+            "name": "0.10mm Standard @Monoprice",
+            "sub_path": "process/0.10mm_standard_monoprice.json"
+        },
+        {
+            "name": "0.15mm Optimal @Monoprice",
+            "sub_path": "process/0.15mm_optimal_monoprice.json"
+        },
+        {
+            "name": "0.20mm Fast @Monoprice",
+            "sub_path": "process/0.20mm_fast_monoprice.json"
+        }
+    ],
+    "filament_list": [
+        {
+            "name": "fdm_filament_common",
+            "sub_path": "filament/fdm_filament_common.json"
+        },
+        {
+            "name": "Monoprice Generic PLA",
+            "sub_path": "filament/monoprice_pla.json"
+        },
+        {
+            "name": "Monoprice Generic ABS",
+            "sub_path": "filament/monoprice_abs.json"
+        },
+        {
+            "name": "Monoprice Generic PETG",
+            "sub_path": "filament/monoprice_petg.json"
+        }
+    ],
+    "machine_list": [
+        {
+            "name": "fdm_machine_common",
+            "sub_path": "machine/fdm_machine_common.json"
+        },
+        {
+            "name": "fdm_marlin_common",
+            "sub_path": "machine/fdm_marlin_common.json"
+        },
+        {
+            "name": "Monoprice Select Mini V2",
+            "sub_path": "machine/monoprice_select_mini_v2.json"
+        }
+    ]
+}
+

@@ -1,0 +1,18 @@
+{
+    "type": "process",
+    "name": "fdm_process_common",
+    "layer_height": "0.15",
+    "wall_loops": "3",
+    "top_shell_layers": "4",
+    "bottom_shell_layers": "4",
+    "infill_sparse_density": "20",
+    "print_speed": "50",
+    "outer_wall_speed": "30",
+    "travel_speed": "100",
+    "initial_layer_speed": "20",
+    "initial_layer_print_height": "0.2",
+    "retraction_amount": "2.0",
+    "retraction_speed": "40",
+    "adhesion_type": "brim"
+}
+

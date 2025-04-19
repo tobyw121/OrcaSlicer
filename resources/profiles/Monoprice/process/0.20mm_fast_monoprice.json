@@ -1,0 +1,17 @@
+{
+    "type": "process_preset",
+    "name": "0.20mm Fast @Monoprice",
+    "inherits": "fdm_process_common",
+    "layer_height": "0.2",
+    "wall_loops": "2",
+    "top_shell_layers": "4",
+    "bottom_shell_layers": "4",
+    "print_speed": "60",
+    "outer_wall_speed": "40",
+    "travel_speed": "120",
+    "initial_layer_speed": "20",
+    "initial_layer_print_height": "0.25",
+    "retraction_amount": "2.5",
+    "retraction_speed": "40"
+}
+

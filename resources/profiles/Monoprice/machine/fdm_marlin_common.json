@@ -1,0 +1,12 @@
+{
+    "type": "machine",
+    "name": "fdm_marlin_common",
+    "inherits": "fdm_machine_common",
+    "machine_technology": "FDM",
+    "default_settings": {
+        "gcode_flavor": "Marlin",
+        "machine_start_gcode": "G28 ; Home all axes\nG1 Z5 F5000 ; Lift nozzle\nG1 X5 Y5 F3000 ; Move to front\nM190 S[first_layer_bed_temperature] ; Wait for bed temp\nM109 S[first_layer_temperature] ; Wait for nozzle temp\nG92 E0 ; Reset extruder\nG1 Z0.2 F1000 ; Lower nozzle\nG1 X60 E10 F500 ; Prime nozzle\nG1 X100 E10 F500 ; Wipe\nG92 E0",
+        "machine_end_gcode": "G0 X0 Y120 ; Move to front\nM190 S0 ; Turn off bed (no wait)\nG92 E10 ; Set extruder to 10\nG1 E7 F200 ; Retract 3mm\nM104 S0 ; Turn off nozzle (no wait)\nG4 S300 ; Delay 5min\nM107 ; Fan off\nM84 ; Disable motors"
+    }
+}
+
