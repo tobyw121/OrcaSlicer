@@ -1,0 +1,14 @@
+{
+    "type": "process_preset",
+    "name": "0.15mm Optimal @Monoprice",
+    "inherits": "fdm_process_common",
+    "layer_height": "0.15",
+    "wall_loops": "3",
+    "top_shell_layers": "4",
+    "bottom_shell_layers": "4",
+    "print_speed": "50",
+    "outer_wall_speed": "30",
+    "initial_layer_speed": "20",
+    "retraction_amount": "2.5",
+    "retraction_speed": "40"
+}
